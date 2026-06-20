@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class Student
+{
+    int StudentId;
+    string StudentName;
+    float StudentMarks;
+    public:
+    Student(int id,string name,float marks)
+    {
+        StudentId=id;
+        StudentName=name;
+        StudentMarks=marks;
+    }
+    void display()
+    {
+        cout<<"StudentId:"<<StudentId<<endl;
+        cout<<"StudentName:"<<StudentName<<endl;
+        cout<<"StudentMarks:"<<StudentMarks<<endl;
+    }
+};
+int main()
+{
+    Student s1(101,"Vamsi Siva",95);
+    Student s2(102,"Raghava",90);
+    s1.display();
+    cout<<"___________________"<<endl;
+    s2.display();
+    return 0;
+}
